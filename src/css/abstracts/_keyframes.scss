@@ -1,14 +1,93 @@
-@keyframes hue-rotate {
+@keyframes hue-rotate-light{
     0% {
         filter: hue-rotate(0deg);
-    }
-    90% {
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+        mix-blend-mode:multiply;
+    } 
+    19% {
         filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+        mix-blend-mode:multiply;
+    } 
+    20% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 20px;
+        mix-blend-mode:normal;
+    }
+    21% {
+        filter: hue-rotate(-360deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
+        mix-blend-mode:hard-light;
+    }
+    22% {
+        filter: hue-rotate(360deg);
+        box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
+        mix-blend-mode:normal;
+    }
+    23% {
+        filter: hue-rotate(-360deg);
+        box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
+        mix-blend-mode:normal;
+    }
+    24% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+        mix-blend-mode:normal;
+    }
+    25% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+        mix-blend-mode:multiply;
+    }
+    34% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+        mix-blend-mode:multiply;
+    }  
+    35% {
+        filter: hue-rotate(360deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+        mix-blend-mode:normal;
+    }
+    36% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+        mix-blend-mode:normal;
+    }
+    70% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+        mix-blend-mode:normal;
+    }
+    85% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+        mix-blend-mode:normal;
+    }
+    97% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+        mix-blend-mode:normal;
+    }
+    98% {
+        filter: hue-rotate(-360deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
+        mix-blend-mode:hard-light;
+    }
+    99% {
+        filter: hue-rotate(360deg);
+        box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
+        mix-blend-mode:normal;
     }
     100% {
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(-360deg);
+        box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
+        mix-blend-mode:normal;
     }
 }
+
+
+
 
 @keyframes bouncelogo {
     0% {
@@ -41,8 +120,11 @@
     100% {
         transform: rotate(0deg);
     }
-
 }
+
+
+
+
 
 @keyframes rotateGradient {
     0% {
@@ -55,3 +137,5 @@
         filter: hue-rotate(360deg);
     }
 }
+
+

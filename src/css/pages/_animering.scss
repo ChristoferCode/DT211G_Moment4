@@ -1,18 +1,6 @@
 @use "../abstracts/keyframes" as *;
 
 
-.image3 {
-    max-width: 100%;
-}
-
-.startimage3 {
-    max-width: 100%;
-    animation-name: hue-rotate;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-}
-
 #startcontainer {
     box-shadow: rgb(0, 0, 0, 0.5) 4px 4px 8px;
     width: 80vw;
@@ -24,9 +12,27 @@
 
 }
 
+.image3 {
+    max-width: 100%;
+}
+
+.startimage3 {
+    max-width: 100%;
+    animation-name: hue-rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+}
+
+#space {
+    width: 100%;
+    height: 60px;
+}
+
+
 #logo7 {
     animation-name: bouncelogo;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-delay: 0ms;
@@ -34,7 +40,7 @@
 
 #logo1 {
     animation-name: bouncelogo;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-delay: 200ms;
@@ -42,7 +48,7 @@
 
 #logo2 {
     animation-name: bouncelogo;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-delay: 400ms;
@@ -50,7 +56,7 @@
 
 #logo3 {
     animation-name: bouncelogo;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-delay: 600ms;
@@ -58,7 +64,7 @@
 
 #logo4 {
     animation-name: bouncelogo;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-delay: 800ms;
@@ -66,7 +72,7 @@
 
 #logo5 {
     animation-name: bouncelogo;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
     animation-delay: 1000ms;
