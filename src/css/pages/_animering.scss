@@ -1,4 +1,4 @@
-@use "../abstracts/keyframes" as *;
+@use "../abstracts/keyframes";
 
 
 #startcontainer {
@@ -18,10 +18,13 @@
 
 .startimage3 {
     max-width: 100%;
-    animation-name: hue-rotate;
+    box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+
+    animation-name: hue-rotate-light;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-fill-mode: none;
+    animation-delay: 10s;
 }
 
 #space {
@@ -78,3 +81,88 @@
     animation-delay: 1000ms;
 }
 
+#logo7dark {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 0ms;
+}
+
+#logo1dark {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 200ms;
+}
+
+#logo2dark {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 400ms;
+}
+
+#logo3dark {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 600ms;
+}
+
+#logo4dark {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 800ms;
+}
+
+#logo5dark {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 1000ms;
+}
+
+#impossiblebutton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    border-radius: 10px;
+
+    animation-name: impossible;
+    animation-duration: 3000ms;
+    animation-play-state: running;
+    cursor: pointer;
+}
+
+
+
+
+// .bigheadline {
+//     animation: crashdown;
+//     animation-duration: 2000ms;
+//     animation-fill-mode: forwards;
+//     animation-delay: 4000ms;
+// }
+
+// .bigheadline2 {
+//     animation: crashdown2;
+//     animation-duration:2000ms;
+//     animation-fill-mode: forwards;
+//     animation-delay: 4000ms;
+// }

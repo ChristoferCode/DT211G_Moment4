@@ -1,92 +1,193 @@
-@keyframes hue-rotate-light{
+
+
+
+@keyframes hue-rotate-light {
     0% {
         filter: hue-rotate(0deg);
-        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
-        mix-blend-mode:multiply;
-    } 
-    19% {
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+        mix-blend-mode:normal;
+    }
+    35% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+        mix-blend-mode:normal;
+    }
+    47% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+        mix-blend-mode:normal;
+    }
+    48% {
+        filter: hue-rotate(-360deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
+        mix-blend-mode:hard-light;
+    }
+    49% {
+        filter: hue-rotate(360deg);
+        box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
+        mix-blend-mode:normal;
+    }
+    50% {
+        filter: hue-rotate(-360deg);
+        box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
+        mix-blend-mode:normal;
+    }
+    51% {
         filter: hue-rotate(0deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
-        mix-blend-mode:multiply;
+        mix-blend-mode: screen;
     } 
-    20% {
+    69% {
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+        mix-blend-mode: screen;
+    } 
+    70% {
         filter: hue-rotate(0deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 20px;
         mix-blend-mode:normal;
     }
-    21% {
+    71% {
         filter: hue-rotate(-360deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
         mix-blend-mode:hard-light;
     }
-    22% {
+    72% {
         filter: hue-rotate(360deg);
         box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
         mix-blend-mode:normal;
     }
-    23% {
+    73% {
         filter: hue-rotate(-360deg);
         box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
         mix-blend-mode:normal;
     }
-    24% {
+    74% {
         filter: hue-rotate(0deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
         mix-blend-mode:normal;
     }
-    25% {
+    75% {
         filter: hue-rotate(0deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
-        mix-blend-mode:multiply;
+        mix-blend-mode: screen;
     }
-    34% {
+    80% {
         filter: hue-rotate(0deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
-        mix-blend-mode:multiply;
+        mix-blend-mode: screen;
     }  
-    35% {
+    81% {
         filter: hue-rotate(360deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
         mix-blend-mode:normal;
     }
-    36% {
+    82% {
         filter: hue-rotate(0deg);
         box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
-        mix-blend-mode:normal;
-    }
-    70% {
-        filter: hue-rotate(0deg);
-        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
-        mix-blend-mode:normal;
-    }
-    85% {
-        filter: hue-rotate(0deg);
-        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
-        mix-blend-mode:normal;
-    }
-    97% {
-        filter: hue-rotate(0deg);
-        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
-        mix-blend-mode:normal;
-    }
-    98% {
-        filter: hue-rotate(-360deg);
-        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
-        mix-blend-mode:hard-light;
-    }
-    99% {
-        filter: hue-rotate(360deg);
-        box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
         mix-blend-mode:normal;
     }
     100% {
-        filter: hue-rotate(-360deg);
-        box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
+        filter: hue-rotate(0deg);
+        box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
         mix-blend-mode:normal;
     }
 }
 
-
+@media (prefers-color-scheme: dark) {
+    @keyframes hue-rotate-light {
+        0% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+            mix-blend-mode:normal;
+        }
+        35% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+            mix-blend-mode:normal;
+        }
+        47% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+            mix-blend-mode:normal;
+        }
+        48% {
+            filter: hue-rotate(-360deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
+            mix-blend-mode:hard-light;
+        }
+        49% {
+            filter: hue-rotate(360deg);
+            box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
+            mix-blend-mode:normal;
+        }
+        50% {
+            filter: hue-rotate(-360deg);
+            box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
+            mix-blend-mode:normal;
+        }
+        51% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+            mix-blend-mode: multiply;
+        } 
+        69% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+            mix-blend-mode: multiply;
+        } 
+        70% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 20px;
+            mix-blend-mode:normal;
+        }
+        71% {
+            filter: hue-rotate(-360deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 100px;
+            mix-blend-mode:hard-light;
+        }
+        72% {
+            filter: hue-rotate(360deg);
+            box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 100px;
+            mix-blend-mode:normal;
+        }
+        73% {
+            filter: hue-rotate(-360deg);
+            box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 100px;
+            mix-blend-mode:normal;
+        }
+        74% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+            mix-blend-mode:normal;
+        }
+        75% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+            mix-blend-mode: multiply;
+        }
+        80% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 0px;
+            mix-blend-mode: multiply;
+        }  
+        81% {
+            filter: hue-rotate(360deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+            mix-blend-mode:normal;
+        }
+        82% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 50px;
+            mix-blend-mode:normal;
+        }
+        100% {
+            filter: hue-rotate(0deg);
+            box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+            mix-blend-mode:normal;
+        }
+    }
+}
 
 
 @keyframes bouncelogo {
@@ -138,4 +239,130 @@
     }
 }
 
+@keyframes crashdown {
+    0% {
+        transform: translateY(0);
+    }
+    28% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: rotate(4deg);
+        transform-origin: left;
+    }
+    40% {
+        transform: rotate(4deg);
+        transform-origin: left;
+    }
+    50% {
+        transform: rotate(-5deg);
+        transform-origin: right;
+        transform: translateY(35px);
+    }
+    55% {
+        transform: translate(1px, 35px);
 
+
+    }
+    60% {
+        transform: translate(-1px, 35px);
+
+
+    }
+    65% {
+        transform: translate(1px, 35px);
+
+
+    }
+    70% {
+        transform: translate(-1px, 35px);
+
+
+    }
+    75% {
+        transform: translate(1px, 35px);
+
+
+    }
+    80% {
+        transform: translate(-1px, 35px);
+
+
+    }
+    85% {
+        transform: translate(1px, 35px);
+
+
+    }
+    90% {
+        transform: translate(-1px, 35px);
+
+    }
+    100% {
+        transform: translateY(90px);
+    }
+ 
+}
+
+@keyframes crashdown2 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+    30% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+    31% {
+        transform: rotate(1deg);
+        transform-origin: left;
+    }
+    40% {
+        transform: rotate(1deg);
+        transform-origin: left;
+    }
+    50% {
+        transform: rotate(-1deg);
+        transform-origin: right;
+    }
+    55% {
+        transform: translate(1px, 0px);
+    }
+    60% {
+        transform: translate(-1px, 0px);
+    }
+    65% {
+        transform: translate(1px, 0px);
+    }
+    70% {
+        transform: translate(-1px, 0px);
+    }
+    75% {
+        transform: translate(1px, 0px);
+    }
+    80% {
+        transform: translate(-1px, 0px);
+    }
+    85% {
+        transform: translate(1px, 0px);
+    }
+    90% {
+        transform: translate(-1px, 0px);
+    }
+    100% {
+        transform: translateY(60px);
+    }
+}
+
+
+
+
+@keyframes impossible {
+    0% {
+       transform: translate(0px, 0px);
+    }
+   
+    100% {
+        transform: translate(60px, 220px);
+    }
+}
