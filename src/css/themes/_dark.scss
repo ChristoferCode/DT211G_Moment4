@@ -29,6 +29,10 @@
         color: $h2-color-dark;
     }
 
+    .who {
+        color: $h2-color-dark;
+    }
+
     .brodtext {
         color: $brodtext-color-dark;
     }
@@ -42,6 +46,14 @@
     }
 
     #logosdarktheme {
+        display: flex;
+    }
+
+    #logosshake {
+        display: none;
+    }
+
+    #logosdarkthemeshake {
         display: flex;
     }
 

@@ -34,7 +34,7 @@
     animation: crashdown3;
     animation-duration:1000ms;
     animation-fill-mode: forwards;
-    animation-delay: 31000ms;
+    animation-delay: 24800ms;
 }
 
 
@@ -69,7 +69,7 @@
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 160px;
     margin-bottom: 100px;
     background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
     border-radius: 10px;
@@ -79,6 +79,214 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: paused;
+    cursor: pointer;
+}
+
+#who {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#answer {
+    margin-bottom: 30px;
+}
+
+
+#tackbutton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#answer2 {
+    margin-bottom: 30px;
+}
+
+#njaabutton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#answer3 {
+    margin-bottom: 30px;
+}
+
+#okeeejbutton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+#lookalike {
+    display: none;
+    flex-direction: column;
+    
+}
+
+
+
+.mattias {
+
+}
+
+.mattin {
+    
+}
+
+.malin {
+    
+}
+
+.malias {
+    
+}
+
+#flipbilder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.flip-box1 {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner1 {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box1:hover .flip-box-inner1 {
+    transform: rotateY(180deg);
+    box-shadow: rgb(255, 102, 245)0px 0px 40px;
+    cursor: help;
+  }
+
+  .flip-box1:focus .flip-box-inner1 {
+    transform: rotateY(180deg);
+    box-shadow: rgb(255, 102, 245) 0px 0px 40px;
+    cursor: help;
+  }
+  
+  .flip-box-front1, .flip-box-back1 {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front1 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back1 {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+#reactionbuttons {
+    display: none;
+}
+
+#reaction1button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#reaction2button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid white;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -183,12 +391,14 @@
 }
 
 
-#logos {
+#logosshake {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-top: 200px;
+    
 
     #logo1shake {
         margin-top: 5px;
@@ -214,12 +424,14 @@
     }
 }
 
-#logosdarktheme {
-    display: flex;
+#logosdarkthemeshake {
+    display: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-top: 200px;
+
 
     #logo1darkshake {
         margin-top: 5px;
