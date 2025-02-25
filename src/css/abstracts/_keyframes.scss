@@ -23,6 +23,21 @@
 }
 
 
+@keyframes slothwalk {
+    0% {
+        transform: translate(0, -235px);
+    }
+    82% {
+        transform: translate(470px, -235px);
+    } 
+    90% {
+        transform: translate(470px, -235px);
+    }
+    100% {
+        transform: translate(470px, 1025px);
+    }
+}
+
 //Rubrik som trillar ner
 
 @keyframes crashdown {

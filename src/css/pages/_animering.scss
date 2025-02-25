@@ -16,14 +16,14 @@
 
 //Rubrik som trillar ner
 
-.bigheadline {
+.bigheadlineanimate {
     animation: crashdown;
     animation-duration: 2000ms;
     animation-fill-mode: forwards;
     animation-delay: 18000ms;
 }
 
-.bigheadline2 {
+.bigheadline2animate {
     animation: crashdown2;
     animation-duration:2000ms;
     animation-fill-mode: forwards;
@@ -44,9 +44,12 @@
     max-width: 100%;
 }
 
+
+
 .startimage3 {
     max-width: 100%;
     box-shadow: rgba(255, 255, 0, 0.8) 0px 0px 10px;
+    margin-top: -100px;
 
     animation-name: hue-rotate-light;
     animation-duration: 30s;
@@ -55,6 +58,21 @@
     animation-delay: 10s;
 }
 
+.image4 {
+    max-width: 20%;
+}
+
+.startimage4 {
+    max-width: 20%;
+    transform: translateY(-235px);
+
+    animation-name: slothwalk;
+    animation-duration: 19.5s;
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+}
 
 
 //Fejk-knapp som flyttar sig hela tiden
