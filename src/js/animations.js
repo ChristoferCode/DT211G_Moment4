@@ -17,4 +17,6 @@ function stayButton () {
     console.log("also working...");
 
     impossibleEl.style.animationPlayState = "paused";
+    impossibleEl.style.animationDelay = "100ms";
+
 }

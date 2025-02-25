@@ -12,6 +12,34 @@
 
 }
 
+
+
+//Rubrik som trillar ner
+
+.bigheadline {
+    animation: crashdown;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 18000ms;
+}
+
+.bigheadline2 {
+    animation: crashdown2;
+    animation-duration:2000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 18000ms;
+}
+
+#crashtext {
+    animation: crashdown3;
+    animation-duration:1000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 31000ms;
+}
+
+
+//Bild som flimrar och slocknar
+
 .image3 {
     max-width: 100%;
 }
@@ -27,107 +55,9 @@
     animation-delay: 10s;
 }
 
-#space {
-    width: 100%;
-    height: 60px;
-}
 
 
-#logo7 {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 0ms;
-}
-
-#logo1 {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 200ms;
-}
-
-#logo2 {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 400ms;
-}
-
-#logo3 {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 600ms;
-}
-
-#logo4 {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 800ms;
-}
-
-#logo5 {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 1000ms;
-}
-
-#logo7dark {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 0ms;
-}
-
-#logo1dark {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 200ms;
-}
-
-#logo2dark {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 400ms;
-}
-
-#logo3dark {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 600ms;
-}
-
-#logo4dark {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 800ms;
-}
-
-#logo5dark {
-    animation-name: bouncelogo;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
-    animation-delay: 1000ms;
-}
+//Fejk-knapp som flyttar sig hela tiden
 
 #impossiblebutton {
     font-family: 'Courier New', Courier, monospace;
@@ -145,24 +75,180 @@
     border-radius: 10px;
 
     animation-name: impossible;
-    animation-duration: 3000ms;
-    animation-play-state: running;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
     cursor: pointer;
 }
 
 
 
+//Skakande logtyper
 
-// .bigheadline {
-//     animation: crashdown;
-//     animation-duration: 2000ms;
-//     animation-fill-mode: forwards;
-//     animation-delay: 4000ms;
-// }
+#logo7shake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 0ms;
+}
 
-// .bigheadline2 {
-//     animation: crashdown2;
-//     animation-duration:2000ms;
-//     animation-fill-mode: forwards;
-//     animation-delay: 4000ms;
-// }
+#logo1shake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 200ms;
+}
+
+#logo2shake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 400ms;
+}
+
+#logo3shake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 600ms;
+}
+
+#logo4shake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 800ms;
+}
+
+#logo5shake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 1000ms;
+}
+
+#logo7darkshake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 0ms;
+}
+
+#logo1darkshake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 200ms;
+}
+
+#logo2darkshake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 400ms;
+}
+
+#logo3darkshake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 600ms;
+}
+
+#logo4darkshake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 800ms;
+}
+
+#logo5darkshake {
+    animation-name: bouncelogo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-delay: 1000ms;
+}
+
+
+#logos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    #logo1shake {
+        margin-top: 5px;
+    }
+
+    #logo3shake {
+        display: flex;
+        margin-top: 10px;
+        gap:10px;
+
+        #box {
+            margin-top: -5px;
+        }
+    }
+
+    #logo4shake {
+        display: flex;
+        gap:0px;
+
+        #cat {
+            margin-top: 2px;
+        }
+    }
+}
+
+#logosdarktheme {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    #logo1darkshake {
+        margin-top: 5px;
+    }
+
+    #logo3darkshake {
+        display: flex;
+        margin-top: 10px;
+        gap:10px;
+
+        #boxdark {
+            margin-top: -5px;
+        }
+    }
+
+    #logo4darkshake {
+        display: flex;
+        gap:0px;
+
+        #catdark {
+            margin-top: 2px;
+        }
+    }
+}
+
+
+
+
+
+
+
+

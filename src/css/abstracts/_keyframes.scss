@@ -1,6 +1,165 @@
 
 
 
+
+
+
+
+
+
+
+
+
+@keyframes rotateGradient {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    90% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+//Rubrik som trillar ner
+
+@keyframes crashdown {
+    0% {
+        transform: translateY(0);
+    }
+    28% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: rotate(4deg);
+        transform-origin: left;
+    }
+    40% {
+        transform: rotate(4deg);
+        transform-origin: left;
+    }
+    50% {
+        transform: rotate(-5deg);
+        transform-origin: right;
+        transform: translateY(35px);
+    }
+    55% {
+        transform: translate(1px, 35px);
+
+
+    }
+    60% {
+        transform: translate(-1px, 35px);
+
+
+    }
+    65% {
+        transform: translate(1px, 35px);
+
+
+    }
+    70% {
+        transform: translate(-1px, 35px);
+
+
+    }
+    75% {
+        transform: translate(1px, 35px);
+
+
+    }
+    80% {
+        transform: translate(-1px, 35px);
+
+
+    }
+    85% {
+        transform: translate(1px, 35px);
+
+
+    }
+    90% {
+        transform: translate(-1px, 35px);
+
+    }
+    100% {
+        transform: translateY(90px);
+    }
+ 
+}
+
+
+@keyframes crashdown2 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+    30% {
+        transform: rotate(0deg);
+        transform-origin: left;
+    }
+    31% {
+        transform: rotate(1deg);
+        transform-origin: left;
+    }
+    40% {
+        transform: rotate(1deg);
+        transform-origin: left;
+    }
+    50% {
+        transform: rotate(-1deg);
+        transform-origin: right;
+    }
+    55% {
+        transform: translate(1px, 0px);
+    }
+    60% {
+        transform: translate(-1px, 0px);
+    }
+    65% {
+        transform: translate(1px, 0px);
+    }
+    70% {
+        transform: translate(-1px, 0px);
+    }
+    75% {
+        transform: translate(1px, 0px);
+    }
+    80% {
+        transform: translate(-1px, 0px);
+    }
+    85% {
+        transform: translate(1px, 0px);
+    }
+    90% {
+        transform: translate(-1px, 0px);
+    }
+    100% {
+        transform: translateY(60px);
+    }
+}
+
+
+
+@keyframes crashdown3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+ 
+    100% {
+        transform: translateY(590px);
+    }
+}
+
+
+
+//Bild som flimrar och slocknar
+
 @keyframes hue-rotate-light {
     0% {
         filter: hue-rotate(0deg);
@@ -190,6 +349,49 @@
 }
 
 
+//Fejk-knapp som flyttar sig hela tiden
+
+@keyframes impossible {
+    0% {
+       transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(30px, -40px);
+    }
+    20% {
+        transform: translate(90px, 90px);
+    }
+    30% {
+        transform: translate(-50px, -190px);
+    }
+    40% {
+        transform: translate(-150px, 30px);
+    }
+    50% {
+        transform: translate(50px, 290px);
+    }
+    60% {
+        transform: translate(0px, -190px);
+    }
+    70% {
+        transform: translate(-50px, -390px);
+    }
+    80% {
+        transform: translate(200px, -100px);
+    }
+    90% {
+        transform: translate(-50px, 20px);
+    }
+    100% {
+        transform: translate(60px, -20px);
+    }
+}
+
+
+
+
+//Skakande logtyper
+
 @keyframes bouncelogo {
     0% {
         transform: rotate(0deg);
@@ -220,149 +422,5 @@
     }
     100% {
         transform: rotate(0deg);
-    }
-}
-
-
-
-
-
-@keyframes rotateGradient {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    90% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-@keyframes crashdown {
-    0% {
-        transform: translateY(0);
-    }
-    28% {
-        transform: translateY(0);
-    }
-    30% {
-        transform: rotate(4deg);
-        transform-origin: left;
-    }
-    40% {
-        transform: rotate(4deg);
-        transform-origin: left;
-    }
-    50% {
-        transform: rotate(-5deg);
-        transform-origin: right;
-        transform: translateY(35px);
-    }
-    55% {
-        transform: translate(1px, 35px);
-
-
-    }
-    60% {
-        transform: translate(-1px, 35px);
-
-
-    }
-    65% {
-        transform: translate(1px, 35px);
-
-
-    }
-    70% {
-        transform: translate(-1px, 35px);
-
-
-    }
-    75% {
-        transform: translate(1px, 35px);
-
-
-    }
-    80% {
-        transform: translate(-1px, 35px);
-
-
-    }
-    85% {
-        transform: translate(1px, 35px);
-
-
-    }
-    90% {
-        transform: translate(-1px, 35px);
-
-    }
-    100% {
-        transform: translateY(90px);
-    }
- 
-}
-
-@keyframes crashdown2 {
-    0% {
-        transform: rotate(0deg);
-        transform-origin: left;
-    }
-    30% {
-        transform: rotate(0deg);
-        transform-origin: left;
-    }
-    31% {
-        transform: rotate(1deg);
-        transform-origin: left;
-    }
-    40% {
-        transform: rotate(1deg);
-        transform-origin: left;
-    }
-    50% {
-        transform: rotate(-1deg);
-        transform-origin: right;
-    }
-    55% {
-        transform: translate(1px, 0px);
-    }
-    60% {
-        transform: translate(-1px, 0px);
-    }
-    65% {
-        transform: translate(1px, 0px);
-    }
-    70% {
-        transform: translate(-1px, 0px);
-    }
-    75% {
-        transform: translate(1px, 0px);
-    }
-    80% {
-        transform: translate(-1px, 0px);
-    }
-    85% {
-        transform: translate(1px, 0px);
-    }
-    90% {
-        transform: translate(-1px, 0px);
-    }
-    100% {
-        transform: translateY(60px);
-    }
-}
-
-
-
-
-@keyframes impossible {
-    0% {
-       transform: translate(0px, 0px);
-    }
-   
-    100% {
-        transform: translate(60px, 220px);
     }
 }
