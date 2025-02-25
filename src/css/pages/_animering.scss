@@ -74,6 +74,7 @@
     background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
     border-radius: 10px;
 
+
     animation-name: impossible;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
@@ -110,13 +111,26 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
     display: none;
     justify-content: center;
     cursor: pointer;
+    transition: 1s;
 
 }
+
+//Inspirerats av rörlig gradient härifrån: https://stackoverflow.com/questions/57218443/how-to-animate-a-radial-gradient-using-css
+
+#tackbutton:hover {
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+
+    transform: scale(1.20);
+    animation-name: buttonGradient;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
 
 #answer2 {
     margin-bottom: 30px;
@@ -134,13 +148,24 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
     display: none;
     justify-content: center;
     cursor: pointer;
+    transition: 1s;
 
 }
+
+#njaabutton:hover {
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+
+    transform: scale(1.20);
+    animation-name: buttonGradient;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
 
 #answer3 {
     margin-bottom: 30px;
@@ -158,18 +183,29 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
     display: none;
     justify-content: center;
     cursor: pointer;
+    transition: 1s;
 
 }
+
+#okeeejbutton:hover {
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+
+    transform: scale(1.20);
+    animation-name: buttonGradient;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
 
 #lookalike {
     display: none;
     flex-direction: column;
-    
+    margin-top: 50px;
 }
 
 
@@ -189,6 +225,9 @@
 .malias {
     
 }
+
+
+/* Kod inspirerad från https://www.w3schools.com/howto/howto_css_flip_image.asp */
 
 #flipbilder {
     display: flex;
@@ -264,12 +303,24 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: 1s;
+
 }
+
+#reaction1button:hover {
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+
+    transform: scale(1.20);
+    animation-name: buttonGradient;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
 
 #reaction2button {
     font-family: 'Courier New', Courier, monospace;
@@ -283,14 +334,24 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition: 1s;
+
 }
 
+#reaction2button:hover {
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
 
+    transform: scale(1.20);
+    animation-name: buttonGradient;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+} 
 
 //Skakande logtyper
 

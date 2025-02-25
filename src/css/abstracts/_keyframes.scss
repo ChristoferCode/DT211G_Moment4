@@ -424,3 +424,25 @@
         transform: rotate(0deg);
     }
 }
+
+
+
+//Inspirerats av rörlig gradient härifrån: https://stackoverflow.com/questions/57218443/how-to-animate-a-radial-gradient-using-css
+
+@property --x {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+  }
+  
+  @keyframes buttonGradient {
+      0% {
+      --x:0%
+      }
+      50% {
+      --x:50%
+      }
+      100% {
+      --x:100%
+      }
+  }

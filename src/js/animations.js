@@ -95,7 +95,7 @@ function showLookalike() {
 }
 
 function answerText4happy() {
-    answer4El.innerHTML = "Tjoho! Tack, ni är bäst!";
+    answer4El.innerHTML = "Tjoho! Tack, ni är bäst! :)";
 
 }
 
