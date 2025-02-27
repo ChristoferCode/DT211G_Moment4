@@ -56,6 +56,13 @@ body {
     border-radius: 30px 30px 30px 30px; 
 }
 
+#main2 {
+    background-color: $mainbg-color-light;
+    width: 95%;
+    @include centerObject(auto);
+    border-radius: 30px 30px 30px 30px; 
+}
+
 
 @media only screen and (max-width: 470px) {
     #startcontainer {

@@ -25,16 +25,16 @@
 
 @keyframes slothwalk {
     0% {
-        transform: translate(0, -235px);
+        transform: translate(0, -25vh);
     }
     82% {
-        transform: translate(470px, -235px);
+        transform: translate(65vw, -25vh);
     } 
     90% {
-        transform: translate(470px, -235px);
+        transform: translate(65vw, -25vh);
     }
     100% {
-        transform: translate(470px, 1025px);
+        transform: translate(65vw, 85vh);
     }
 }
 
