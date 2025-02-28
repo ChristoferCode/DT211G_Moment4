@@ -15,6 +15,28 @@ let reaction2El = document.getElementById("reaction2button");
 let answer4El = document.getElementById("answer4");
 
 
+
+
+function typeText(text, element, delay) {
+    let words = text.split(" ");
+    let index = 0;
+
+    function typeWord() {
+        if (index < words.length) {
+            element.innerHTML += words[index] + " ";
+            index++;
+            setTimeout(typeWord, delay);
+        }
+    }
+
+    typeWord();
+}
+
+function showButton(element) {
+    element.style.display = "flex";
+}
+
+
 impossibleEl.addEventListener("mouseover", moveButton);
 impossibleEl.addEventListener("mouseout", stayButton);
 
@@ -56,17 +78,27 @@ function answerText() {
 
 
     if (inputName === "mattias") {
-        answerEl.innerHTML = "Hej Mattias! Vad kul att det är du som rättar denna uppgift.";
-        tackEl.style.display = "flex";
-
+        let text = "Hej Mattias! Vad kul att det är du som rättar denna uppgift.";
+        typeText(text, answerEl, 100);
+        
+        setTimeout(showButton, 5200);
+        
+        showButton(tackEl);
+      
 
     } else if (inputName === "malin") {
-        answerEl.innerHTML = "Hej Malin! Vad kul att det är du som rättar denna uppgift.";
-        tackEl.style.display = "flex";
-        tackEl.style.animationPlayState = "running";
+        let text = "Hej Malin! Vad kul att det är du som rättar denna uppgift.";
+        typeText(text, answerEl, 100);
+
+        setTimeout(showButton, 5200);
+        
+        showButton(tackEl);
+        
 
     } else {
-        answerEl.innerHTML = "Oj, vem är du och hur har du hittat hit?";
+        let text = "Oj, vem är du och hur har du hittat hit?";
+        typeText(text, answerEl, 100);
+
     }
 
     tackEl.addEventListener("click", function() {
@@ -78,18 +110,19 @@ function answerText() {
 function answerText2(inputName) {
 
     if (inputName === "mattias") {
-        answer2El.innerHTML = "Det hade gått bra med Malin också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
+        let text = "Det hade gått bra med Malin också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
+        typeText(text, answer2El, 100);
+
         njaaEl.style.display = "flex";
-        njaaEl.style.animationPlayState = "running";
 
 
     } else if (inputName === "malin") {
-        answer2El.innerHTML = "Det hade gått bra med Mattias också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
+        let text = "Det hade gått bra med Mattias också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
+        typeText(text, answer2El, 100);
+
         njaaEl.style.display = "flex";
-        njaaEl.style.animationPlayState = "running";
 
     }
-
 
     njaaEl.addEventListener("click", function() {
         answerText3();
@@ -97,11 +130,10 @@ function answerText2(inputName) {
 }
 
 function answerText3() {
+    let text = "Jo kolla här. Är egentligen bara håret och glasögoen som skiljer!";
+    typeText(text, answer3El, 100);
 
-
-    answer3El.innerHTML = "Jo kolla här. Är egentligen bara håret och glasögoen som skiljer!";
     okeeejEl.style.display = "flex";
-    okeeejEl.style.animationPlayState = "running";
 
 
     okeeejEl.addEventListener("click", showLookalike);
@@ -111,7 +143,6 @@ function answerText3() {
 function showLookalike() {
     lookalikeEl.style.display = "flex";
     reactionEl.style.display = "flex";
-    reactionEl.style.animationPlayState = "running";
 
 
     reaction1El.addEventListener("click", answerText4happy);
@@ -119,11 +150,18 @@ function showLookalike() {
 }
 
 function answerText4happy() {
-    answer4El.innerHTML = "Tjoho! Tack, ni är bäst! :)";
+    let text = "Tjoho! Tack, ni är bäst! :)";
+    typeText(text, answer4El, 100);
 
 }
 
 function answerText4mad() {
-    answer4El.innerHTML = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
- 
+    let text = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
+    typeText(text, answer4El, 100);
+
 }
+
+
+
+
+
