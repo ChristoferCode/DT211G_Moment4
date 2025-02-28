@@ -13,6 +13,8 @@ let reactionEl = document.getElementById("reactionbuttons");
 let reaction1El = document.getElementById("reaction1button");
 let reaction2El = document.getElementById("reaction2button");
 let answer4El = document.getElementById("answer4");
+let closinggateEl = document.getElementById("closinggate");
+
 
 let buttonDelay;
 let words =[];
@@ -190,7 +192,7 @@ function answerText4happy() {
 function answerText4mad() {
     let text = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
     typeText(text, answer4El, 100);
-
+    closinggateEl.style.animationPlayState = "running";
 }
 
 

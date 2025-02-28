@@ -1,6 +1,8 @@
 @use "../abstracts/keyframes";
 
 
+
+
 #startcontainer {
     box-shadow: rgb(0, 0, 0, 0.5) 4px 4px 8px;
     width: 80vw;
@@ -9,7 +11,6 @@
     max-width: 1000px;
     border-radius: 50px 50px 40px 40px;   
     background-image: linear-gradient(rgb(57, 7, 63), rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131), rgb(57, 7, 63));
-
 }
 
 
@@ -570,6 +571,17 @@
 
 
 
+#closinggate {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-name: closinggate;
+    animation-duration: 10s;
+
+    animation-play-state: paused;
+}
 
 
 
