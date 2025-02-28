@@ -216,6 +216,7 @@ function answerText4mad() {
         let text = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
         typeText(text, answer4El, 100);
         closinggateEl.style.animationPlayState = "running";
+   
     }
 }
 

@@ -265,6 +265,19 @@ h2 {
         line-height: 5vw;
         margin-top: -14vw;
     }
+
+    .startimage4 {
+        max-width: 15%;
+        position: absolute;
+        top:25px;
+        left:25p;
+        animation-name: slothwalk;
+        animation-duration: 19.5s;
+        animation-fill-mode: none;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+    }
 }
 
 @media only screen and (min-width: 1235px) {
@@ -291,5 +304,6 @@ h2 {
         line-height: 9.2rem;
         margin-top: -125px;
     }
+
 }
 
