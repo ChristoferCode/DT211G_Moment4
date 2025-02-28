@@ -19,13 +19,19 @@ let closinggateEl = document.getElementById("closinggate");
 let buttonDelay;
 let words =[];
 
+let answerTextFlag = false;
+let answerText2Flag = false;
+let answerText3Flag = false;
+let showLokalikeFlag = false;
+let answerText4Flag = false;
+
 
 function typeText(text, element, delay) {
-
+    
     words = text.split(" ");
     let index = 0;
     
-    
+    console.log(words);
 
     element.innerHTML ="";
 
@@ -38,16 +44,18 @@ function typeText(text, element, delay) {
         }
         
     }
-    console.log(words);
 
-    
+    console.log("nu fortsätter funktionen...");
+
+
     buttonDelay = words.length *100;
 
     typeWord();
-
+    
 }
 
 function showButton(element) {
+
     element.style.display = "flex";
 }
 
@@ -70,11 +78,15 @@ inputEl.addEventListener("keypress", function(name) {
         lookalikeEl.style.display = "none";
         reactionEl.style.display = "none";
         answer4El.innerHTML ="";
-
-
+        
+        answerTextFlag = false;
+        answerText2Flag = false;
+        answerText3Flag = false;
+        answerText4Flag = false;
 
         answerText();
     }
+
 });
 
 
@@ -91,20 +103,21 @@ function stayButton () {
 function answerText() {
     let inputName = inputEl.value.toLowerCase();
 
-    if (inputName === "mattias") {
+    if (inputName === "mattias" && answerText2Flag == false) {
         let text = "Hej Mattias! Vad kul att det är du som rättar denna uppgift.";
-
         typeText(text, answerEl, 100);
         console.log(buttonDelay);
+        answerTextFlag = true;
 
         setTimeout(function() {
             showButton(tackEl); 
         }, buttonDelay);
       
 
-    } else if (inputName === "malin") {
+    } else if (inputName === "malin" && answerTextFlag == false) {
         let text = "Hej Malin! Vad kul att det är du som rättar denna uppgift.";
         typeText(text, answerEl, 100);
+        answerTextFlag = true;
 
         setTimeout(function() {
             showButton(tackEl); 
@@ -119,7 +132,7 @@ function answerText() {
 
     tackEl.addEventListener("click", function() {
         answerText2(inputName);
-    }, {once: true});
+    });
  
 }
 
@@ -128,18 +141,20 @@ function answerText2(inputName) {
     njaaEl.style.display = "none";
     
 
-    if (inputName === "mattias") {
+    if (inputName === "mattias" && answerText2Flag == false) {
         let text = "Det hade gått bra med Malin också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
         typeText (text, answer2El, 100);
+        answerText2Flag = true;
 
         setTimeout(function() {
             showButton(njaaEl); 
         }, buttonDelay);
 
 
-    } else if (inputName === "malin") {
+    } else if (inputName === "malin" && answerText2Flag == false) {
         let text = "Det hade gått bra med Mattias också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
         typeText(text, answer2El, 100);
+        answerText2Flag = true;
 
         setTimeout(function() {
             showButton(njaaEl); 
@@ -149,29 +164,34 @@ function answerText2(inputName) {
 
     njaaEl.addEventListener("click", function() {
         answerText3();
-    }, {once: true});
+    });
 }
 
 function answerText3() {
     okeeejEl.style.display = "none";
 
-    let text = "Jo kolla här. Är egentligen bara håret, skägget och glasögonen som skiljer!";
-    typeText(text, answer3El, 100);
+    if (answerText3Flag == false) {
+        let text = "Jo kolla här. Är egentligen bara håret, skägget och glasögonen som skiljer!";
+        typeText(text, answer3El, 100);
+        answerText3Flag = true;
 
-    setTimeout(function() {
-        showButton(okeeejEl); 
-    }, buttonDelay);
+        setTimeout(function() {
+            showButton(okeeejEl); 
+        }, buttonDelay);
+    }
 
 
     okeeejEl.addEventListener("click", function() {
         showLookalike();
-    }, {once: true});
+    });
 }
 
 
 function showLookalike() {
-    lookalikeEl.style.display = "flex";
-    reactionEl.style.display = "flex";
+    if (showLokalikeFlag == false) {
+        lookalikeEl.style.display = "flex";
+        reactionEl.style.display = "flex";
+    }
 
 
     reaction1El.addEventListener("click", function() {
@@ -184,15 +204,19 @@ function showLookalike() {
 }
 
 function answerText4happy() {
-    let text = "Tjoho! Tack, ni är bäst! :)";
-    typeText(text, answer4El, 100);
-
+    if (answerText4Flag == false) {
+        let text = "Tjoho! Tack, ni är bäst! :)";
+        typeText(text, answer4El, 100);
+        closinggateEl.style.animationPlayState = "paused";
+    }
 }
 
 function answerText4mad() {
-    let text = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
-    typeText(text, answer4El, 100);
-    closinggateEl.style.animationPlayState = "running";
+    if (answerText4Flag == false) {
+        let text = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
+        typeText(text, answer4El, 100);
+        closinggateEl.style.animationPlayState = "running";
+    }
 }
 
 

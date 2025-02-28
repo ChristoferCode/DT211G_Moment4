@@ -330,6 +330,7 @@
 #reactionbuttons {
     display: none;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 
     animation-name: buttonfromright;
@@ -340,6 +341,7 @@
 
 #reaction1button {
     display: flex;
+    
 }
 
 #like {
@@ -578,9 +580,10 @@
     top: 0;
     left: 0;
     animation-name: closinggate;
-    animation-duration: 10s;
-
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
     animation-play-state: paused;
+    animation-delay: 10s;
 }
 
 
