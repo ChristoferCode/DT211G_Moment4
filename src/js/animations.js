@@ -21,6 +21,21 @@ impossibleEl.addEventListener("mouseout", stayButton);
 inputEl.addEventListener("keypress", function(name) {
     if (name.key === "Enter") {
 
+        answerEl.innerHTML ="";
+        tackEl.style.display = "none";
+
+        answer2El.innerHTML ="";
+        njaaEl.style.display = "none";
+
+        answer3El.innerHTML ="";
+        okeeejEl.style.display = "none";
+
+        lookalikeEl.style.display = "none";
+        reactionEl.style.display = "none";
+        answer4El.innerHTML ="";
+
+
+
         answerText();
     }
 });
@@ -39,15 +54,17 @@ function stayButton () {
 function answerText() {
     let inputName = inputEl.value.toLowerCase();
 
-    answerEl.innerHTML ="";
 
     if (inputName === "mattias") {
         answerEl.innerHTML = "Hej Mattias! Vad kul att det är du som rättar denna uppgift.";
         tackEl.style.display = "flex";
+        tackEl.style.animationPlayState = "running";
+
 
     } else if (inputName === "malin") {
         answerEl.innerHTML = "Hej Malin! Vad kul att det är du som rättar denna uppgift.";
         tackEl.style.display = "flex";
+        tackEl.style.animationPlayState = "running";
 
     } else {
         answerEl.innerHTML = "Oj, vem är du och hur har du hittat hit?";
@@ -64,10 +81,14 @@ function answerText2(inputName) {
     if (inputName === "mattias") {
         answer2El.innerHTML = "Det hade gått bra med Malin också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
         njaaEl.style.display = "flex";
+        njaaEl.style.animationPlayState = "running";
+
 
     } else if (inputName === "malin") {
         answer2El.innerHTML = "Det hade gått bra med Mattias också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
         njaaEl.style.display = "flex";
+        njaaEl.style.animationPlayState = "running";
+
     }
 
 
@@ -81,6 +102,8 @@ function answerText3() {
 
     answer3El.innerHTML = "Jo kolla här. Är egentligen bara håret och glasögoen som skiljer!";
     okeeejEl.style.display = "flex";
+    okeeejEl.style.animationPlayState = "running";
+
 
     okeeejEl.addEventListener("click", showLookalike);
 }
@@ -89,6 +112,8 @@ function answerText3() {
 function showLookalike() {
     lookalikeEl.style.display = "flex";
     reactionEl.style.display = "flex";
+    reactionEl.style.animationPlayState = "running";
+
 
     reaction1El.addEventListener("click", answerText4happy);
     reaction2El.addEventListener("click", answerText4mad);

@@ -137,6 +137,10 @@
     cursor: pointer;
     transition: 1s;
 
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
 }
 
 //Inspirerats av rörlig gradient härifrån: https://stackoverflow.com/questions/57218443/how-to-animate-a-radial-gradient-using-css
@@ -174,6 +178,11 @@
     cursor: pointer;
     transition: 1s;
 
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+
 }
 
 #njaabutton:hover {
@@ -208,6 +217,11 @@
     justify-content: center;
     cursor: pointer;
     transition: 1s;
+
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
 
 }
 
@@ -315,6 +329,12 @@
 #reactionbuttons {
     display: none;
     justify-content: center;
+
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+
 }
 
 #reaction1button {
@@ -336,6 +356,7 @@
     cursor: pointer;
     transition: 1s;
 
+   
 }
 
 #reaction1button:hover {
