@@ -14,13 +14,18 @@ let reaction1El = document.getElementById("reaction1button");
 let reaction2El = document.getElementById("reaction2button");
 let answer4El = document.getElementById("answer4");
 
-
+let buttonDelay;
+let words =[];
 
 
 function typeText(text, element, delay) {
-    let words = text.split(" ");
-    let index = 0;
 
+    words = text.split(" ");
+    let index = 0;
+    
+    
+
+    element.innerHTML ="";
     function typeWord() {
         if (index < words.length) {
             element.innerHTML += words[index] + " ";
@@ -28,8 +33,12 @@ function typeText(text, element, delay) {
             setTimeout(typeWord, delay);
         }
     }
+    
+    
+    buttonDelay = words.length *100;
 
     typeWord();
+
 }
 
 function showButton(element) {
@@ -76,24 +85,24 @@ function stayButton () {
 function answerText() {
     let inputName = inputEl.value.toLowerCase();
 
-
     if (inputName === "mattias") {
         let text = "Hej Mattias! Vad kul att det är du som rättar denna uppgift.";
+
         typeText(text, answerEl, 100);
-        
-        setTimeout(showButton, 5200);
-        
-        showButton(tackEl);
+        console.log(buttonDelay);
+
+        setTimeout(function() {
+            showButton(tackEl); 
+        }, buttonDelay);
       
 
     } else if (inputName === "malin") {
         let text = "Hej Malin! Vad kul att det är du som rättar denna uppgift.";
         typeText(text, answerEl, 100);
 
-        setTimeout(showButton, 5200);
-        
-        showButton(tackEl);
-        
+        setTimeout(function() {
+            showButton(tackEl); 
+        }, buttonDelay);
 
     } else {
         let text = "Oj, vem är du och hur har du hittat hit?";
@@ -101,42 +110,56 @@ function answerText() {
 
     }
 
+
     tackEl.addEventListener("click", function() {
         answerText2(inputName);
-    });
-
+    }, { once: true});
+ 
 }
 
 function answerText2(inputName) {
+    
+    njaaEl.style.display = "none";
+
 
     if (inputName === "mattias") {
         let text = "Det hade gått bra med Malin också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
         typeText(text, answer2El, 100);
 
-        njaaEl.style.display = "flex";
+        setTimeout(function() {
+            showButton(njaaEl); 
+        }, buttonDelay);
 
 
     } else if (inputName === "malin") {
         let text = "Det hade gått bra med Mattias också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
         typeText(text, answer2El, 100);
 
-        njaaEl.style.display = "flex";
+        setTimeout(function() {
+            showButton(njaaEl); 
+        }, buttonDelay);
 
     }
 
     njaaEl.addEventListener("click", function() {
         answerText3();
-    });
+    }, {once:true});
 }
 
 function answerText3() {
+    okeeejEl.style.display = "none";
+
     let text = "Jo kolla här. Är egentligen bara håret och glasögoen som skiljer!";
     typeText(text, answer3El, 100);
 
-    okeeejEl.style.display = "flex";
+    setTimeout(function() {
+        showButton(okeeejEl); 
+    }, buttonDelay);
 
 
-    okeeejEl.addEventListener("click", showLookalike);
+    okeeejEl.addEventListener("click", function() {
+        showLookalike();
+    }, {once:true});
 }
 
 
@@ -145,8 +168,13 @@ function showLookalike() {
     reactionEl.style.display = "flex";
 
 
-    reaction1El.addEventListener("click", answerText4happy);
-    reaction2El.addEventListener("click", answerText4mad);
+    reaction1El.addEventListener("click", function() {
+        answerText4happy();
+    });
+
+    reaction2El.addEventListener("click", function() {
+      answerText4mad();
+    });
 }
 
 function answerText4happy() {
