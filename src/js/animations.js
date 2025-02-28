@@ -26,14 +26,18 @@ function typeText(text, element, delay) {
     
 
     element.innerHTML ="";
+
+    
     function typeWord() {
         if (index < words.length) {
             element.innerHTML += words[index] + " ";
             index++;
             setTimeout(typeWord, delay);
         }
+        
     }
-    
+    console.log(words);
+
     
     buttonDelay = words.length *100;
 
@@ -113,18 +117,18 @@ function answerText() {
 
     tackEl.addEventListener("click", function() {
         answerText2(inputName);
-    }, { once: true});
+    }, {once: true});
  
 }
 
 function answerText2(inputName) {
-    
-    njaaEl.style.display = "none";
 
+    njaaEl.style.display = "none";
+    
 
     if (inputName === "mattias") {
         let text = "Det hade gått bra med Malin också såklart. Ni är ganska lika trots allt. Har du tänkt på det?";
-        typeText(text, answer2El, 100);
+        typeText (text, answer2El, 100);
 
         setTimeout(function() {
             showButton(njaaEl); 
@@ -143,13 +147,13 @@ function answerText2(inputName) {
 
     njaaEl.addEventListener("click", function() {
         answerText3();
-    }, {once:true});
+    }, {once: true});
 }
 
 function answerText3() {
     okeeejEl.style.display = "none";
 
-    let text = "Jo kolla här. Är egentligen bara håret och glasögoen som skiljer!";
+    let text = "Jo kolla här. Är egentligen bara håret, skägget och glasögonen som skiljer!";
     typeText(text, answer3El, 100);
 
     setTimeout(function() {
@@ -159,7 +163,7 @@ function answerText3() {
 
     okeeejEl.addEventListener("click", function() {
         showLookalike();
-    }, {once:true});
+    }, {once: true});
 }
 
 
@@ -173,7 +177,7 @@ function showLookalike() {
     });
 
     reaction2El.addEventListener("click", function() {
-      answerText4mad();
+        answerText4mad();
     });
 }
 
