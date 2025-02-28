@@ -119,6 +119,13 @@
 
 
 #tackbutton {
+    display: none;
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#tack {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.6rem;
     color: white;
@@ -132,20 +139,13 @@
     margin-bottom: 20px;
     background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
-    display: none;
     justify-content: center;
     cursor: pointer;
     transition: 1s;
-
-    animation-name: buttonfromright;
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
 }
-
 //Inspirerats av rörlig gradient härifrån: https://stackoverflow.com/questions/57218443/how-to-animate-a-radial-gradient-using-css
 
-#tackbutton:hover {
+#tack:hover {
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
 
     transform: scale(1.20);
@@ -160,6 +160,13 @@
 }
 
 #njaabutton {
+    display: none;
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#njaa {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.6rem;
     color: white;
@@ -173,19 +180,12 @@
     margin-bottom: 20px;
     background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
-    display: none;
     justify-content: center;
     cursor: pointer;
     transition: 1s;
-
-    animation-name: buttonfromright;
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
-
 }
 
-#njaabutton:hover {
+#njaa:hover {
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
 
     transform: scale(1.20);
@@ -200,6 +200,13 @@
 }
 
 #okeeejbutton {
+    display: none;
+    animation-name: buttonfromright;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#okeeej {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.6rem;
     color: white;
@@ -213,19 +220,12 @@
     margin-bottom: 20px;
     background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
-    display: none;
     justify-content: center;
     cursor: pointer;
     transition: 1s;
-
-    animation-name: buttonfromright;
-    animation-duration: 1s;
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
-
 }
 
-#okeeejbutton:hover {
+#okeeej:hover {
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
 
     transform: scale(1.20);
@@ -329,6 +329,7 @@
 #reactionbuttons {
     display: none;
     justify-content: center;
+    gap: 50px;
 
     animation-name: buttonfromright;
     animation-duration: 1s;
@@ -338,6 +339,10 @@
 }
 
 #reaction1button {
+    display: flex;
+}
+
+#like {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.6rem;
     color: white;
@@ -351,15 +356,12 @@
     margin-bottom: 20px;
     background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
-    display: flex;
     justify-content: center;
     cursor: pointer;
     transition: 1s;
-
-   
 }
 
-#reaction1button:hover {
+#like:hover {
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
 
     transform: scale(1.20);
@@ -370,6 +372,10 @@
 } 
 
 #reaction2button {
+    display: flex;
+}
+
+#dislike {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.6rem;
     color: white;
@@ -383,14 +389,12 @@
     margin-bottom: 20px;
     background-image: radial-gradient(ellipse farthest-corner at var(--x) 0%, rgb(119, 14, 131) 0%, rgb(202, 28, 222) 50%, rgb(119, 14, 131) 100%);
     border-radius: 10px;
-    display: flex;
     justify-content: center;
     cursor: pointer;
     transition: 1s;
-
 }
 
-#reaction2button:hover {
+#dislike:hover {
     box-shadow: rgb(255, 255, 255) 0px 2px 8px;
 
     transform: scale(1.20);

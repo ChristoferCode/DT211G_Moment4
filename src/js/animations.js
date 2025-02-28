@@ -58,7 +58,6 @@ function answerText() {
     if (inputName === "mattias") {
         answerEl.innerHTML = "Hej Mattias! Vad kul att det är du som rättar denna uppgift.";
         tackEl.style.display = "flex";
-        tackEl.style.animationPlayState = "running";
 
 
     } else if (inputName === "malin") {
