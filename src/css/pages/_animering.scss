@@ -21,6 +21,24 @@
     animation-delay: 1s;
 }
 
+.image5 {
+    max-width: 20%;
+}
+
+.startimage5 {
+    max-width: 20%;
+    position: relative;
+    transform: translateY(-45%);
+    left: 5%;
+    animation-name: slothwalk2;
+    animation-duration: 19.5s;
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    opacity: 0%;
+}
+
 
 //Rubrik som trillar ner
 
@@ -548,21 +566,39 @@
 
 @media only screen and (max-width: 420px) {
 
-.image4 {
-    max-width: 20%;
+    .image4 {
+        max-width: 20%;
 
-}
+    }
 
-.startimage4 {
-    max-width: 15%;
-    position: static;
-    transform: translateY(-300%);
-    left: 5%;
-    animation-name: slothwalk;
-    animation-duration: 19.5s;
-    animation-fill-mode: none;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-}
+    .startimage4 {
+        max-width: 15%;
+        position: static;
+        transform: translateY(-300%);
+        left: 5%;
+        animation-name: slothwalk;
+        animation-duration: 19.5s;
+        animation-fill-mode: none;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+    }
+
+    .image5 {
+        max-width: 20%;
+    }
+    
+    .startimage5 {
+        max-width: 20%;
+        position: relative;
+        transform: translateY(-45%);
+        left: 5%;
+        animation-name: slothwalk2;
+        animation-duration: 19.5s;
+        animation-fill-mode: none;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+        opacity: 0%;
+    }
 }

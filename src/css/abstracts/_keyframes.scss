@@ -28,8 +28,28 @@
     90% {
         transform: translate(500%, 0);
     }
+    99% {
+        transform: translate(500%, 750%);
+        opacity: 100%;    
+    }
     100% {
-        transform: translate(500%, 1300%);
+        opacity: 0%;    
+    }
+}
+
+@keyframes slothwalk2 {
+    0% {
+        transform: translate(0, -45%);
+        opacity: 0%;    
+    }
+  
+    99% {
+        transform: translate(400%, -45%);
+        opacity: 0%;    
+    }
+    100% {
+        transform: translate(400%, -45%);
+        opacity: 100%;    
     }
 }
 
@@ -599,7 +619,7 @@
   //Sengångare som glider längs linjen och faller
 
   @media only screen and (max-width: 420px) {
-
+    
 
     @keyframes slothwalk {
         0% {
@@ -611,8 +631,28 @@
         90% {
             transform: translate(500%, -300%);
         }
+        99% {
+            transform: translate(500%, 750%);
+            opacity: 100%;    
+        }
         100% {
-            transform: translate(500%, 1300%);
+            opacity: 0%;    
+        }
+    }
+    
+    @keyframes slothwalk2 {
+        0% {
+            transform: translate(0, -45%);
+            opacity: 0%;    
+        }
+      
+        99% {
+            transform: translate(400%, -45%);
+            opacity: 0%;    
+        }
+        100% {
+            transform: translate(400%, -45%);
+            opacity: 100%;    
         }
     }
 
