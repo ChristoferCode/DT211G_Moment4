@@ -85,7 +85,9 @@ h2 {
     margin-top: 20px;
 }
 
+//Testar @extend (Selector inheritance) utan placeholder
 #lookalikeh2 {
+    @extend h2;
 }
 
 .who {
@@ -108,7 +110,6 @@ h2 {
     margin-top: 20px;
     padding: 5px;
 }
-
 
 .brodtext {
     font-family: $font-stack1;
@@ -150,7 +151,7 @@ h2 {
 
 
 
-
+//Media queries för rubriken
 
 @media only screen and (max-width: 840px) {
     .bigheadline {
@@ -178,6 +179,7 @@ h2 {
     }
 }
 
+
 @media only screen and (max-width: 640px) {
     .bigheadline {
         font-size: 13.0vw;
@@ -203,6 +205,7 @@ h2 {
         margin-top: -12vw;
     }
 }
+
 
 @media only screen and (max-width: 540px) {
     .bigheadline {
@@ -230,6 +233,7 @@ h2 {
     }
 }
 
+
 @media only screen and (max-width: 470px) {
     .bigheadline {
         font-size: 12.4vw;
@@ -255,6 +259,7 @@ h2 {
         margin-top: -13vw;
     }
 }
+
 
 @media only screen and (max-width: 420px) {
     .bigheadline {
@@ -283,7 +288,6 @@ h2 {
 }
 
 
-
 @media only screen and (min-width: 1235px) {
     .bigheadline {
         font-size: 16.8rem;
@@ -308,6 +312,5 @@ h2 {
         line-height: 9.2rem;
         margin-top: -125px;
     }
-
 }
 

@@ -45,12 +45,28 @@
         color: $h2-color-dark;
     }
 
+    #lookalikeh2 {
+        color: $h2-color-dark;
+    }
+
     .brodtext {
         color: $brodtext-color-dark;
     }
 
     .brodtext2 {
         color: $brodtext-color-dark;
+    }
+
+    #impossiblebutton {
+        border: 2px solid $buttonfromright-bordercolor-dark;
+    }
+
+    .buttonfromright {
+        border: 2px solid $buttonfromright-bordercolor-dark;
+    }
+
+    .buttonfromright:hover {
+        box-shadow: rgb(255, 255, 255) 0px 2px 8px;
     }
 
     #logos {

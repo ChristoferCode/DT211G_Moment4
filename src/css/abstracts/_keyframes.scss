@@ -1,26 +1,19 @@
+//Lägger alla mina keyframes till animeringarna i denna fil (utom till hamburgermenyn
 
 
 
 
-
-
-
-
-
-
-
-
-@keyframes rotateGradient {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    90% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
+// @keyframes rotateGradient {
+//     0% {
+//         filter: hue-rotate(0deg);
+//     }
+//     90% {
+//         filter: hue-rotate(0deg);
+//     }
+//     100% {
+//         filter: hue-rotate(360deg);
+//     }
+// }
 
 
 //Sengångare som glider längs linjen och faller
@@ -39,7 +32,6 @@
         transform: translate(500%, 1300%);
     }
 }
-
 
 
 //Rubrik som trillar ner
@@ -66,47 +58,31 @@
     }
     55% {
         transform: translate(1%, 25%);
-
-
     }
     60% {
         transform: translate(-1%, 25%);
-
-
     }
     65% {
         transform: translate(1%, 25%);
-
-
     }
     70% {
         transform: translate(-1%, 25%);
-
-
     }
     75% {
         transform: translate(1%, 25%);
-
-
     }
     80% {
         transform: translate(-1%, 25%);
-
-
     }
     85% {
         transform: translate(1%, 25%);
-
-
     }
     90% {
         transform: translate(-1%, 25%);
-
     }
     100% {
         transform: translateY(110%);
     }
- 
 }
 
 
@@ -161,7 +137,6 @@
 }
 
 
-
 @keyframes crashdown3 {
     0% {
         transform: translateY(0px);
@@ -169,12 +144,10 @@
     50% {
         transform: translateY(0px);
     }
- 
     100% {
         transform: translateY(485%);
     }
 }
-
 
 
 //Bild som flimrar och slocknar
@@ -271,6 +244,7 @@
         mix-blend-mode:normal;
     }
 }
+
 
 @media (prefers-color-scheme: dark) {
     @keyframes hue-rotate-light {
@@ -407,8 +381,6 @@
 }
 
 
-
-
 //Skakande logtyper
 
 @keyframes bouncelogo {
@@ -445,7 +417,6 @@
 }
 
 
-
 //Inspirerats av rörlig gradient härifrån: https://stackoverflow.com/questions/57218443/how-to-animate-a-radial-gradient-using-css
 
 @property --x {
@@ -454,20 +425,21 @@
     initial-value: 0%;
   }
   
-  @keyframes buttonGradient {
-      0% {
-      --x:0%
-      }
-      50% {
-      --x:50%
-      }
-      100% {
-      --x:100%
-      }
-  }
+@keyframes buttonGradient {
+    0% {
+    --x:0%
+    }
+    50% {
+    --x:50%
+    }
+    100% {
+    --x:100%
+    }
+}
 
 
-  @keyframes buttonfromright {
+//Knappar som kommer in från höger efter "chatbot"-frågor/kommentarer
+@keyframes buttonfromright {
     0% {
         transform: matrix(1,0,0,1,1000,0);
     }
@@ -477,17 +449,19 @@
     100% {
         transform:translateX(0px);
     }
-  }
+}
 
 
-  @keyframes closinggate {
+//Metaldörr som stänger sidan
+
+@keyframes closinggate {
     0% {
         transform: translateY(100vh);
     }
     100% {
         transform: translateY(0vh);
     }
-  }
+}
 
 
 
