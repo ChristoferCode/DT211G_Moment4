@@ -532,32 +532,32 @@
 
 
 
-@media only screen and (max-width: 420px) {
+// @media only screen and (max-width: 420px) {
     
-    .startimage4 {
-        max-width: 15%;
-        position: absolute;
-        top: -5%;
-        left: 5%;
+//     .startimage4 {
+//         max-width: 15%;
+//         position: absolute;
+//         top: -5%;
+//         left: 5%;
 
-    }
-}
+//     }
+// }
 
 
 //Sengångare som glider längs linjen och faller
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 420px) {
 
 .image4 {
     max-width: 20%;
-    position: static;
-    top: 30vh;
-    left: 5%;
+
 }
 
 .startimage4 {
     max-width: 15%;
-    
+    position: static;
+    top: 30vh;
+    left: 5%;
     animation-name: slothwalk;
     animation-duration: 19.5s;
     animation-fill-mode: none;
