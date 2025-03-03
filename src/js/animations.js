@@ -205,7 +205,7 @@ function showLookalike() {
 }
 
 function answerText4happy() {
-        let text = "Tjoho! Tack, ni är bäst! :)";
+        let text = "Tjoho! Tack, ni är <strong>bäst</strong>! :)";
         typeText(text, answer4El, 100);
         // answerText4Flag = true;
         // regretAnswer = true;
@@ -214,7 +214,7 @@ function answerText4happy() {
 }
 
 function answerText4mad() {
-        let text = "Förlåt...det var bara på skoj :( Ni är inte alls lika!";
+        let text = "<strong>Förlåt</strong>...det var bara på skoj :( Ni är inte alls lika!";
         typeText(text, answer4El, 100);
         // answerText4Flag = true;
         // regretAnswer = true;
