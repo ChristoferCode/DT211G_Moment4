@@ -550,13 +550,14 @@
 
 .image4 {
     max-width: 20%;
+    position: absolute;
+    top: 100%;
+    left: 5%;
 }
 
 .startimage4 {
     max-width: 15%;
-    position: relative;
-    top: 0%;
-    left: 5%;
+    
     animation-name: slothwalk;
     animation-duration: 19.5s;
     animation-fill-mode: none;
