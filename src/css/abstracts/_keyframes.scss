@@ -23,6 +23,8 @@
 }
 
 
+//Sengångare som glider längs linjen och faller
+
 @keyframes slothwalk {
     0% {
         transform: translate(0, 0);
@@ -37,6 +39,8 @@
         transform: translate(500%, 1300%);
     }
 }
+
+
 
 //Rubrik som trillar ner
 
@@ -484,3 +488,28 @@
         transform: translateY(0vh);
     }
   }
+
+
+
+
+//   //Sengångare som glider längs linjen och faller
+
+//   @media only screen and (max-width: 840px) {
+
+
+//     @keyframes slothwalk {
+//         0% {
+//             transform: translate(0, 0);
+//         }
+//         82% {
+//             transform: translate(500%, 0);
+//         } 
+//         90% {
+//             transform: translate(500%, 0);
+//         }
+//         100% {
+//             transform: translate(500%, 1300%);
+//         }
+//     }
+
+//   }

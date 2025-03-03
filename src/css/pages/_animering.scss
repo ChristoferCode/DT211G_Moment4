@@ -14,14 +14,14 @@
 .startimage4 {
     max-width: 15%;
     position: absolute;
-    top: -30%;
+    top: -20%;
     left: 5%;
     animation-name: slothwalk;
     animation-duration: 19.5s;
     animation-fill-mode: none;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    animation-delay: 1s;
+    animation-delay: 100s;
 }
 
 
@@ -576,5 +576,61 @@
 
 
 
+@media only screen and (max-width: 840px) {
+
+    .startimage4 {
+        max-width: 15%;
+        position: absolute;
+        top: -18%;
+        left: 5%;
+
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .startimage4 {
+        max-width: 15%;
+        position: absolute;
+        top: -35%;
+        left: 5%;
+
+    }
+
+
+}
+@media only screen and (max-width: 540px) {
+}
+.startimage4 {
+    max-width: 15%;
+    position: absolute;
+    top: -25%;
+    left: 5%;
+
+}
+
+
+@media only screen and (max-width: 470px) {
+}
+.startimage4 {
+    max-width: 15%;
+    position: absolute;
+    top: -6%;
+    left: 5%;
+
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .startimage4 {
+        max-width: 15%;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+
+    }
+
+}
 
 
