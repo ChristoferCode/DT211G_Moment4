@@ -596,7 +596,7 @@
             transform: translateY(0px);
         }
         100% {
-            transform: translateY(325%);
+            transform: translateY(330%);
         }
     }
 
@@ -645,7 +645,7 @@
             transform: translate(-1%, 25%);
         }
         100% {
-            transform: translateY(100%);
+            transform: translateY(110%);
         }
     }
 
@@ -695,21 +695,7 @@
             transform: translate(-1%, 0%);
         }
         100% {
-            transform: translateY(80%);
-        }
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    @keyframes crashdown3 {
-        0% {
-            transform: translateY(0px);
-        }
-        50% {
-            transform: translateY(0px);
-        }
-        100% {
-            transform: translateY(325%);
+            transform: translateY(90%);
         }
     }
 }
