@@ -14,6 +14,8 @@ let reaction1El = document.getElementById("reaction1button");
 let reaction2El = document.getElementById("reaction2button");
 let answer4El = document.getElementById("answer4");
 let closinggateEl = document.getElementById("closinggate");
+let answer5El = document.getElementById("answer5");
+let answer6El = document.getElementById("answer6");
 
 
 
@@ -218,8 +220,28 @@ function answerText4mad() {
         typeText(text, answer4El, 100);
         // answerText4Flag = true;
         // regretAnswer = true;
+        setTimeout(function() {
+            answerText5mad();
+        }, 3000);
 
-        closinggateEl.style.animationPlayState = "running";
+}
+
+function answerText5mad() {
+    let text = "<strong>Stänger</strong> <strong>ner</strong> <strong>sida</strong> <strong>om...</strong><br>(avbryt genom att trycka Du är godkänd!)";
+    typeText(text, answer5El, 100);
+
+    setTimeout(function() {
+        answerText6mad();
+    }, 1000);
+
+}
+
+function answerText6mad() {
+    let text = "...10 ...9 ...8 ...7 ...6 ...5 ...4 ...3 ...2 ...1 ...0";
+    typeText(text, answer6El, 1000);
+
+    closinggateEl.style.animationPlayState = "running";
+
 }
 
 
