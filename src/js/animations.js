@@ -227,7 +227,7 @@ function answerText4mad() {
 }
 
 function answerText5mad() {
-    let text = "<strong>Stänger</strong> <strong>ner</strong> <strong>sida</strong> <strong>om...</strong><br>(avbryt genom att trycka Du är godkänd!)";
+    let text = "<strong>Stänger</strong> <strong>ner</strong> <strong>sida</strong> <strong>om...</strong> <br> (avbryt genom att trycka Du är godkänd!) ";
     typeText(text, answer5El, 100);
 
     setTimeout(function() {
