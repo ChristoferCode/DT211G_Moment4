@@ -555,8 +555,8 @@
 
 .startimage4 {
     max-width: 15%;
-    position: static;
-    top: 30vh;
+    position: absolute;
+    top: 100%;
     left: 5%;
     animation-name: slothwalk;
     animation-duration: 19.5s;
