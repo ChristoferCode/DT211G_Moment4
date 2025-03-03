@@ -642,16 +642,16 @@
     
     @keyframes slothwalk2 {
         0% {
-            transform: translate(0, -45%);
+            transform: translate(0, -50%);
             opacity: 0%;    
         }
       
         99% {
-            transform: translate(400%, -45%);
+            transform: translate(400%, -50%);
             opacity: 0%;    
         }
         100% {
-            transform: translate(400%, -45%);
+            transform: translate(400%, -50%);
             opacity: 100%;    
         }
     }
