@@ -544,3 +544,24 @@
 }
 
 
+//Sengångare som glider längs linjen och faller
+
+@media only screen and (max-width: 350px) {
+
+.image4 {
+    max-width: 20%;
+}
+
+.startimage4 {
+    max-width: 15%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    animation-name: slothwalk;
+    animation-duration: 19.5s;
+    animation-fill-mode: none;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+}
+}
