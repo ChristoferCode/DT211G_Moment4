@@ -598,18 +598,18 @@
 
   //Sengångare som glider längs linjen och faller
 
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 420px) {
 
 
     @keyframes slothwalk {
         0% {
-            transform: translate(0, 0);
+            transform: translate(0, 25vh);
         }
         82% {
-            transform: translate(500%, 0);
+            transform: translate(500%, 25vh);
         } 
         90% {
-            transform: translate(500%, 0);
+            transform: translate(500%, 25vh);
         }
         100% {
             transform: translate(500%, 1300%);
