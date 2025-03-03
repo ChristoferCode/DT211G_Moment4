@@ -595,7 +595,7 @@
             transform: translateY(0px);
         }
         100% {
-            transform: translateY(425%);
+            transform: translateY(375%);
         }
     }
 }
@@ -609,7 +609,7 @@
             transform: translateY(0px);
         }
         100% {
-            transform: translateY(445%);
+            transform: translateY(375%);
         }
     }
 }
@@ -623,13 +623,13 @@
 
     @keyframes slothwalk {
         0% {
-            transform: translate(0, -300%);
+            transform: translate(0, -320%);
         }
         82% {
-            transform: translate(500%, -300%);
+            transform: translate(500%, -320%);
         } 
         90% {
-            transform: translate(500%, -300%);
+            transform: translate(500%, -320%);
         }
         99% {
             transform: translate(500%, 750%);
