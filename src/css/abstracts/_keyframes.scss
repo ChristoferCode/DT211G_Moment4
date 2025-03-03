@@ -466,27 +466,7 @@
 
 
 
-//   //Sengångare som glider längs linjen och faller
 
-//   @media only screen and (max-width: 840px) {
-
-
-//     @keyframes slothwalk {
-//         0% {
-//             transform: translate(0, 0);
-//         }
-//         82% {
-//             transform: translate(500%, 0);
-//         } 
-//         90% {
-//             transform: translate(500%, 0);
-//         }
-//         100% {
-//             transform: translate(500%, 1300%);
-//         }
-//     }
-
-//   }
 
 @media only screen and (max-width: 1140px) {
     @keyframes crashdown3 {
@@ -599,3 +579,41 @@
         }
     }
 }
+
+@media only screen and (max-width: 350px) {
+    @keyframes crashdown3 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(0px);
+        }
+        100% {
+            transform: translateY(445%);
+        }
+    }
+}
+
+
+
+//   //Sengångare som glider längs linjen och faller
+
+//   @media only screen and (max-width: 350px) {
+
+
+//     @keyframes slothwalk {
+//         0% {
+//             transform: translate(0, 0);
+//         }
+//         82% {
+//             transform: translate(500%, 0);
+//         } 
+//         90% {
+//             transform: translate(500%, 0);
+//         }
+//         100% {
+//             transform: translate(500%, 1300%);
+//         }
+//     }
+
+//   }
