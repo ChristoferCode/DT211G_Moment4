@@ -603,13 +603,13 @@
 
     @keyframes slothwalk {
         0% {
-            transform: translate(0, 0);
+            transform: translate(0, -75%);
         }
         82% {
-            transform: translate(500%, 0);
+            transform: translate(500%, -75%);
         } 
         90% {
-            transform: translate(500%, 0);
+            transform: translate(500%, -75%);
         }
         100% {
             transform: translate(500%, 1300%);
