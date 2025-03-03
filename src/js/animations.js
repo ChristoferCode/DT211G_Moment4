@@ -232,12 +232,12 @@ function answerText5mad() {
 
     setTimeout(function() {
         answerText6mad();
-    }, 1000);
+    }, 3000);
 
 }
 
 function answerText6mad() {
-    let text = "...10 ...9 ...8 ...7 ...6 ...5 ...4 ...3 ...2 ...1 ...0";
+    let text = "...10 ...9 ...8 ...7 ...6 ...5 ...4 ...3 ...2 ...1 ...";
     typeText(text, answer6El, 1000);
 
     closinggateEl.style.animationPlayState = "running";
