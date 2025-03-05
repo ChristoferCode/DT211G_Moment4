@@ -33,6 +33,7 @@
         opacity: 100%;    
     }
     100% {
+        transform: translate(500%, 750%);
         opacity: 0%;    
     }
 }
@@ -722,6 +723,7 @@
             opacity: 100%;    
         }
         100% {
+            transform: translate(500%, 750%);
             opacity: 0%;    
         }
     }
